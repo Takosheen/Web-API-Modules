@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Ewu4stTGkGyPzejyrw/xj0ZlAFSUXb9z9yhCRaAttk3iM0yC/UFZh02tSod2742Ni3hl0Rz1xAilZTm/UCeH0Q==",
+  "dgSpecHash": "ZOyfccWvZ2dfzLSGtU/5LDbphfKs+0M/WNoVRbJnYNyKCxNw23CYY4sv5Fy/9KHEwGfHRZVaO7ZCRg6f+QHVLw==",
   "success": true,
   "projectFilePath": "C:\\Users\\bobau\\source\\repos\\Web-API-Modules\\SchoolAPI\\SchoolAPI\\SchoolAPI.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\bobau\\.nuget\\packages\\nlog\\4.7.2\\nlog.4.7.2.nupkg.sha512"
+  ],
   "logs": []
 }
