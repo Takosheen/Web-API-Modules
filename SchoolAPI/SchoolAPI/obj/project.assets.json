@@ -366,7 +366,7 @@
           }
         }
       },
-      "NLog/4.7.2": {
+      "NLog/4.7.9": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/NLog.dll": {}
@@ -1959,10 +1959,10 @@
         "version.txt"
       ]
     },
-    "NLog/4.7.2": {
-      "sha512": "tfZNTOYr0TwvJNrXsJsVdZPSgIpYN1rXHnAZAadeaIbz+v18agNCCxgZXnXQqNKNizkogJ68zYTNKavyQFWwrg==",
+    "NLog/4.7.9": {
+      "sha512": "Y0dKY5d506ZVcb8dTMp3BSb+jUGaFu/ArvRkgn4daDWKf7qqFXjEFYjqoyTrWkcNguqS6avkwICS0hsFsr4BzA==",
       "type": "package",
-      "path": "nlog/4.7.2",
+      "path": "nlog/4.7.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1988,7 +1988,7 @@
         "lib/wp8/NLog.xml",
         "lib/xamarinios10/NLog.dll",
         "lib/xamarinios10/NLog.xml",
-        "nlog.4.7.2.nupkg.sha512",
+        "nlog.4.7.9.nupkg.sha512",
         "nlog.nuspec"
       ]
     },
@@ -5186,6 +5186,7 @@
       "LoggerService >= 1.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.4",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.4",
+      "NLog >= 4.7.9",
       "Repository >= 1.0.0"
     ]
   },
@@ -5258,6 +5259,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[3.1.4, )"
+          },
+          "NLog": {
+            "target": "Package",
+            "version": "[4.7.9, )"
           }
         },
         "imports": [
