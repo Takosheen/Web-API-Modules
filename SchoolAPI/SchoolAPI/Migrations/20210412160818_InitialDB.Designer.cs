@@ -4,14 +4,16 @@ using Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace SchoolAPI.Migrations
 {
     [DbContext(typeof(RepositoryContext))]
-    partial class RepositoryContextModelSnapshot : ModelSnapshot
+    [Migration("20210412160818_InitialDB")]
+    partial class InitialDB
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -26,12 +28,6 @@ namespace SchoolAPI.Migrations
                         .HasColumnName("OrganizationId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("City")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Country")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("OrgName")
                         .IsRequired()
                         .HasColumnType("nvarchar(60)")
@@ -45,15 +41,11 @@ namespace SchoolAPI.Migrations
                         new
                         {
                             Id = new Guid("c9d4c053-49b6-410c-bc78-2d54a9991870"),
-                            City = "Bloomfield",
-                            Country = "USA",
                             OrgName = "xyz org"
                         },
                         new
                         {
                             Id = new Guid("3d490a70-94ce-4d15-9494-5248280c2ce3"),
-                            City = "Lusaka",
-                            Country = "ZM",
                             OrgName = "lmnop org"
                         });
                 });
@@ -84,25 +76,19 @@ namespace SchoolAPI.Migrations
                         {
                             Id = new Guid("80abbca8-664d-4b20-b5de-024705497d4a"),
                             OrganizationId = new Guid("c9d4c053-49b6-410c-bc78-2d54a9991870"),
-                            UserName = "tca28"
+                            UserName = "kwilliams"
                         },
                         new
                         {
                             Id = new Guid("86dba8c0-d178-41e7-938c-ed49778fb52a"),
                             OrganizationId = new Guid("c9d4c053-49b6-410c-bc78-2d54a9991870"),
-                            UserName = "tca"
+                            UserName = "ka393939"
                         },
                         new
                         {
                             Id = new Guid("021ca3c1-0deb-4afd-ae94-2159a8479811"),
                             OrganizationId = new Guid("3d490a70-94ce-4d15-9494-5248280c2ce3"),
-                            UserName = "tca6"
-                        },
-                        new
-                        {
-                            Id = new Guid("021ca3c1-0deb-4afd-ae94-2159a8479816"),
-                            OrganizationId = new Guid("3d490a70-94ce-4d15-9494-5248280c2ce3"),
-                            UserName = "tca6"
+                            UserName = "kaw3939"
                         });
                 });
 

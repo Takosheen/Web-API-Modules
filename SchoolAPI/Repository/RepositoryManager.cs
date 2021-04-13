@@ -8,6 +8,7 @@ namespace Repository
         private RepositoryContext _repositoryContext;
         private IOrganizationRepository _organizationRepository;
         private IUserRepository _userRepository;
+        private ICourseRepository _courseRepository;
 
         public RepositoryManager(RepositoryContext repositoryContext)
         {
@@ -33,6 +34,15 @@ namespace Repository
                     _userRepository = new UserRepository(_repositoryContext);
 
                 return _userRepository;
+            }
+        }
+        public ICourseRepository Course
+        {
+            get
+            {
+                if (_courseRepository == null)
+                    _courseRepository = new CourseRepository(_repositoryContext);
+                return _courseRepository;
             }
         }
 

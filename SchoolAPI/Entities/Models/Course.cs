@@ -5,15 +5,14 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Entities.Models
 {
-    public class Organization
+    public class Course
     {
-        [Column("OrganizationId")]
+        [Column("CourseId")]
         public Guid Id { get; set; }
 
-        [Required(ErrorMessage = "Organization name is a required field.")]
+        [Required(ErrorMessage = "Course name is a required field.")]
         [MaxLength(60, ErrorMessage = "Maximum length for the Name is 60 characters.")]
-        [MinLength(5, ErrorMessage = "Minimum length for the Name is 60 characters.")]
-        public string OrgName { get; set; }
+        public string CourseName { get; set; }
         public string City { get; set; }
         public string Country { get; set; }
         public ICollection<User> Users { get; set; }
