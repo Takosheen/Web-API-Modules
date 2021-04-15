@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
+using Entities.Models;
 
 namespace CompanyEmployees.Controllers
 {
@@ -12,10 +13,7 @@ namespace CompanyEmployees.Controllers
     [ApiController]
     public class OrganizationsController : ControllerBase
     {
-        [Route("api/v1/organizations")]
-        [ApiController]
-        public class OrganizationsController : ControllerBase
-        {
+
             private readonly IRepositoryManager _repository;
             private readonly ILoggerManager _logger;
             private readonly IMapper _mapper;
@@ -120,4 +118,3 @@ namespace CompanyEmployees.Controllers
             }
         }
     }
-}
