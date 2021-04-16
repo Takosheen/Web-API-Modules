@@ -38,6 +38,7 @@
           "LoggerService": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.4",
           "Microsoft.EntityFrameworkCore.Tools": "3.1.4",
+          "NLog": "4.7.9",
           "Repository": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
@@ -663,11 +664,11 @@
           "System.Security.Principal.Windows": "4.5.0"
         }
       },
-      "NLog/4.7.2": {
+      "NLog/4.7.9": {
         "runtime": {
           "lib/netstandard2.0/NLog.dll": {
             "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.7.2.11786"
+            "fileVersion": "4.7.9.12899"
           }
         },
         "compile": {
@@ -1284,7 +1285,7 @@
       "LoggerService/1.0.0": {
         "dependencies": {
           "Contracts": "1.0.0",
-          "NLog": "4.7.2"
+          "NLog": "4.7.9"
         },
         "runtime": {
           "LoggerService.dll": {}
@@ -3124,12 +3125,12 @@
       "path": "microsoft.win32.registry/4.5.0",
       "hashPath": "microsoft.win32.registry.4.5.0.nupkg.sha512"
     },
-    "NLog/4.7.2": {
+    "NLog/4.7.9": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-tfZNTOYr0TwvJNrXsJsVdZPSgIpYN1rXHnAZAadeaIbz+v18agNCCxgZXnXQqNKNizkogJ68zYTNKavyQFWwrg==",
-      "path": "nlog/4.7.2",
-      "hashPath": "nlog.4.7.2.nupkg.sha512"
+      "sha512": "sha512-Y0dKY5d506ZVcb8dTMp3BSb+jUGaFu/ArvRkgn4daDWKf7qqFXjEFYjqoyTrWkcNguqS6avkwICS0hsFsr4BzA==",
+      "path": "nlog/4.7.9",
+      "hashPath": "nlog.4.7.9.nupkg.sha512"
     },
     "runtime.native.System/4.3.0": {
       "type": "package",
