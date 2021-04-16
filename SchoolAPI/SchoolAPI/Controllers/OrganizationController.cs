@@ -28,9 +28,9 @@ namespace CompanyEmployees.Controllers
             try
             {
                 var organizations = _repository.Organization.GetAllOrganizations(trackChanges: false);
-                //return Ok(organizations);
-                var organizationDto = _mapper.Map<IEnumerable<OrganizationDto>>(organizations);
-                return Ok(organizationDto);
+                return Ok(organizations);
+                /*var organizationDto = _mapper.Map<IEnumerable<OrganizationDto>>(organizations);
+                return Ok(organizationDto);*/
 
             }
             catch (Exception ex)
@@ -40,7 +40,7 @@ namespace CompanyEmployees.Controllers
             }
         }
         [HttpGet("{id}")]
-        public IActionResult GetOrganization(Guid id)
+        public IActionResult GetOrganizationy(Guid id)
         {
             try
             {
